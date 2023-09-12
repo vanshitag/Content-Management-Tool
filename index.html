@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>CONTENT MANAGEMENT TOOL</h1>
+  <div class="card">
+    <div class="input-section">
+      <b><label class="label-section" for="title">TITLE</label></b>
+      <br />
+      <input class="div-section" cols="50" type="text" id="title" placeholder="Enter title" required>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="content">CONTENT</label></b>
+      <br />
+      <textarea class="div-section" cols="100" type="text" id="content" placeholder="Enter content" required></textarea>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label_section" for="image">IMAGE</label></b>
+      <input class="custom-file-input" type="file" id="image" accept="image/*" required>
+    </div>
+
+    <div class="input-section">
+      <b><label class="label-section" for="video">VIDEO</label></b>
+      <input class="vid_btn" type="file" id="video" accept="video/*">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="main" style="text-align: center;">
+    <button class="button" onclick="submitForm()">SUBMIT</button>
+    <div class="loader">
+      <div class="check">
+        <span class="check-one"></span>
+        <span class="check-two"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-container">
+    <div class="data-section" id="dataSection">
+    </div>
+  </div>
+
+  <script src="./2script.js"></script>
+</body>
+
+</html>
